@@ -9,6 +9,8 @@
 import UIKit
 
 extension UIImageView {
+    
+    @discardableResult
     func setImage(from imagePath: String?) -> URLSessionDataTask? {
         guard let imagePath = imagePath else { return nil }
         if let image = ImageCache.shared.getImage(for: imagePath) {

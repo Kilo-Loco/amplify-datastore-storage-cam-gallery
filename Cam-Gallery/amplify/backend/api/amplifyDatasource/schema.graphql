@@ -1,0 +1,4 @@
+type Photo @model {
+  id: ID!
+  imagePath: String!
+}

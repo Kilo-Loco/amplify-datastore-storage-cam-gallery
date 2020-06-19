@@ -10,9 +10,9 @@ import UIKit
 
 class PhotoViewController: UIViewController {
     
-    let photo: String
+    let photo: Photo
     
-    init(photo: String) {
+    init(photo: Photo) {
         self.photo = photo
         super.init(nibName: nil, bundle: nil)
     }
@@ -24,7 +24,7 @@ class PhotoViewController: UIViewController {
     override func loadView() {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
-        imageView.image = nil
+        imageView.setImage(from: photo.imagePath)
         view = imageView
     }
 }

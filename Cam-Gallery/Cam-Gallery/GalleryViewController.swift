@@ -10,7 +10,7 @@ import UIKit
 
 class GalleryViewController: UIViewController {
     
-    var photos = [String]()
+    var photos = [Photo]()
     let ui = GalleryView()
     
     override func loadView() {
@@ -26,7 +26,6 @@ class GalleryViewController: UIViewController {
     }
     
     func setDummyData() {
-        photos = Array(0 ... 100).map { _ in UUID().uuidString }
         ui.collectionView.reloadData()
     }
     
@@ -59,7 +58,7 @@ extension GalleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let galleryCell = cell as? GalleryCell
         let photo = photos[indexPath.item]
-        galleryCell?.setImage(at: photo)
+        galleryCell?.setImage(at: photo.imagePath)
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
