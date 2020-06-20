@@ -10,6 +10,11 @@
             "StackName": "amplify-cam-gallery-dev-235044",
             "StackId": "arn:aws:cloudformation:eu-west-1:680165778557:stack/amplify-cam-gallery-dev-235044/6a94d600-b2c2-11ea-ae6a-02dbc193ed28",
             "AmplifyAppId": "d23zlbbrajj1em"
+        },
+        "categories": {
+            "auth": {
+                "camgallery23dbd812": {}
+            }
         }
     }
 }

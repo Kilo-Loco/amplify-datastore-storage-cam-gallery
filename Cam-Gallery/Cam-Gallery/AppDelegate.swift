@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try Amplify.add(plugin: AWSDataStorePlugin(
                 modelRegistration: AmplifyModels())
             )
+            
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
+            
             try Amplify.configure()
             
             print("Successfully initialized Amplify")
