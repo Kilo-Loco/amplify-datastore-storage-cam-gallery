@@ -1,0 +1,34 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreatePhoto {
+  onCreatePhoto {
+    id
+    imagePath
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePhoto {
+  onUpdatePhoto {
+    id
+    imagePath
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePhoto {
+  onDeletePhoto {
+    id
+    imagePath
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
