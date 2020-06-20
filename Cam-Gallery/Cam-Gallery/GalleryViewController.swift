@@ -10,6 +10,13 @@ import UIKit
 
 class GalleryViewController: UIViewController {
     
+    lazy var cameraController: UIImagePickerController = {
+        let controller = UIImagePickerController()
+        controller.sourceType = .camera
+        controller.modalPresentationStyle = .overFullScreen
+        controller.delegate = self
+        return controller
+    }()
     var photos = [Photo]()
     let ui = GalleryView()
     
@@ -39,8 +46,9 @@ class GalleryViewController: UIViewController {
     }
     
     func configureCommunication() {
-        ui.didTapCamera = {
-            print("tapped camera")
+        ui.didTapCamera = { [weak self] in
+            guard let cameraController = self?.cameraController else { return }
+            self?.present(cameraController, animated: true)
         }
     }
 }
@@ -72,6 +80,19 @@ extension GalleryViewController: UICollectionViewDelegate {
         let photo = photos[indexPath.item]
         let photoVC = PhotoViewController(photo: photo)
         navigationController?.pushViewController(photoVC, animated: true)
+    }
+}
+
+extension GalleryViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        
+        guard let image = info[.originalImage] as? UIImage else { return }
+        print(image)
     }
 }
 
