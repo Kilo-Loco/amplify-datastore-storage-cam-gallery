@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             try Amplify.add(
                 plugin: AWSAPIPlugin(modelRegistration: models)
             )
-//
-//            try Amplify.add(plugin: AWSCognitoAuthPlugin())
-//            try Amplify.add(plugin: AWSS3StoragePlugin())
+
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSS3StoragePlugin())
 
             try Amplify.configure()
 
