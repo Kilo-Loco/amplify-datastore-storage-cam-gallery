@@ -9,10 +9,6 @@
 //import Amplify
 import UIKit
 
-struct Photo {
-    let imageKey: String
-}
-
 class GalleryViewController: UIViewController {
     
     lazy var cameraController: UIImagePickerController = {
