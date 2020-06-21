@@ -1,5 +1,5 @@
 projects:
-  camgallery:
+  amplifyDatasource:
     schemaPath: graphql/schema.json
     includes:
       - graphql/**/*.graphql
