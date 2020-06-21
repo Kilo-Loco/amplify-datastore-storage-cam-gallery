@@ -30,12 +30,7 @@ class GalleryViewController: UIViewController {
         configureSelf()
         configureCollectionView()
         configureCommunication()
-        setDummyData()
-        getFile()
-    }
-    
-    func setDummyData() {
-        ui.collectionView.reloadData()
+//        getFile()
     }
     
     func configureSelf() {
@@ -103,7 +98,7 @@ extension GalleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let galleryCell = cell as? GalleryCell
         let photo = photos[indexPath.item]
-        galleryCell?.setImage(at: photo.imagePath)
+        galleryCell?.setImage(at: photo.imageKey)
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

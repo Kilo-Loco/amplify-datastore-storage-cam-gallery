@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         do {
-            try Amplify.add(plugin: AWSAPIPlugin())
+            try Amplify.add(plugin:
+                AWSAPIPlugin(modelRegistration: AmplifyModels())
+            )
             try Amplify.add(plugin: AWSDataStorePlugin(
                 modelRegistration: AmplifyModels())
             )

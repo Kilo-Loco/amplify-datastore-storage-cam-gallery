@@ -24,7 +24,7 @@ class PhotoViewController: UIViewController {
     override func loadView() {
         let imageView = UIImageView()
         imageView.contentMode = .scaleToFill
-        imageView.setImage(from: photo.imagePath)
+        imageView.setImage(from: photo.imageKey)
         view = imageView
     }
 }

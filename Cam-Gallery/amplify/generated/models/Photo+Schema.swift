@@ -6,7 +6,7 @@ extension Photo {
   // MARK: - CodingKeys 
    public enum CodingKeys: String, ModelKey {
     case id
-    case imagePath
+    case imageKey
   }
   
   public static let keys = CodingKeys.self
@@ -19,7 +19,7 @@ extension Photo {
     
     model.fields(
       .id(),
-      .field(photo.imagePath, is: .required, ofType: .string)
+      .field(photo.imageKey, is: .required, ofType: .string)
     )
     }
 }

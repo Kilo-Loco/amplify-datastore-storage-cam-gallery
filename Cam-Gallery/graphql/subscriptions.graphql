@@ -2,10 +2,7 @@
 subscription OnCreatePhoto {
   onCreatePhoto {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }
@@ -13,10 +10,7 @@ subscription OnCreatePhoto {
 subscription OnUpdatePhoto {
   onUpdatePhoto {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }
@@ -24,10 +18,7 @@ subscription OnUpdatePhoto {
 subscription OnDeletePhoto {
   onDeletePhoto {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }

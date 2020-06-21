@@ -5,10 +5,7 @@ mutation CreatePhoto(
 ) {
   createPhoto(input: $input, condition: $condition) {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }
@@ -19,10 +16,7 @@ mutation UpdatePhoto(
 ) {
   updatePhoto(input: $input, condition: $condition) {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }
@@ -33,10 +27,7 @@ mutation DeletePhoto(
 ) {
   deletePhoto(input: $input, condition: $condition) {
     id
-    imagePath
-    _version
-    _deleted
-    _lastChangedAt
+    imageKey
     createdAt
     updatedAt
   }

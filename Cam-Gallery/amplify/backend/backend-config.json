@@ -1,6 +1,6 @@
 {
 	"api": {
-		"amplifyDatasource": {
+		"camgallery": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
@@ -9,7 +9,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "API_KEY",
 						"apiKeyConfig": {
-							"description": "",
+							"description": "cam-gallery-api-key",
 							"apiKeyExpirationDays": 7
 						}
 					}
@@ -18,15 +18,14 @@
 		}
 	},
 	"auth": {
-		"camgallery23dbd812": {
+		"camgallery329953d3": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": [],
-			"customAuth": false
+			"dependsOn": []
 		}
 	},
 	"storage": {
-		"LocoResource": {
+		"camGalleryResource": {
 			"service": "S3",
 			"providerPlugin": "awscloudformation"
 		}

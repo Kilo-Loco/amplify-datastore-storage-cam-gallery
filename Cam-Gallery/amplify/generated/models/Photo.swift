@@ -4,11 +4,11 @@ import Foundation
 
 public struct Photo: Model {
   public let id: String
-  public var imagePath: String
+  public var imageKey: String
   
   public init(id: String = UUID().uuidString,
-      imagePath: String) {
+      imageKey: String) {
       self.id = id
-      self.imagePath = imagePath
+      self.imageKey = imageKey
   }
 }

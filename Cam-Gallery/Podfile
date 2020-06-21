@@ -8,9 +8,9 @@ target 'Cam-Gallery' do
   # Pods for Cam-Gallery
   pod 'Amplify'
   pod 'Amplify/Tools'
-  pod 'AmplifyPlugins/AWSAPIPlugin' 
+  pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSDataStorePlugin'
-  
+
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AmplifyPlugins/AWSS3StoragePlugin'
 end
