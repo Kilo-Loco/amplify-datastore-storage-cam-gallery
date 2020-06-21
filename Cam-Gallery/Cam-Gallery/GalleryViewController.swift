@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kilo Loco. All rights reserved.
 //
 
-//import Amplify
+import Amplify
 import UIKit
 
 class GalleryViewController: UIViewController {
@@ -54,34 +54,34 @@ class GalleryViewController: UIViewController {
         print(imageData)
         let key = UUID().uuidString
         
-//        _ = Amplify.Storage.uploadData(key: key, data: imageData,
-//            progressListener: { progress in
-//                print("Progress: \(progress)")
-//            }, resultListener: { (event) in
-//                switch event {
-//                case .success(let data):
-//                    print("Completed: \(data)")
-//                case .failure(let storageError):
-//                    print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-//            }
-//        })
+        _ = Amplify.Storage.uploadData(key: key, data: imageData,
+            progressListener: { progress in
+                print("Progress: \(progress)")
+            }, resultListener: { (event) in
+                switch event {
+                case .success(let data):
+                    print("Completed: \(data)")
+                case .failure(let storageError):
+                    print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            }
+        })
     }
     
     func getFile() {
-//        let startDate = Date()
-//        let key = "C6422CB1-0013-4289-A911-FB9C67D88D98"
-//        _ = Amplify.Storage.downloadData(key: key) { result in
-//            switch result {
-//            case .success(let data):
-//                print("Retrieved data - \(data)")
-//                
-//                print("Start date: \(startDate)")
-//                print("Finish date: \(Date())")
-//                
-//            case .failure(let error):
-//                print("Could not fetch data - \(error)")
-//            }
-//        }
+        let startDate = Date()
+        let key = "C6422CB1-0013-4289-A911-FB9C67D88D98"
+        _ = Amplify.Storage.downloadData(key: key) { result in
+            switch result {
+            case .success(let data):
+                print("Retrieved data - \(data)")
+                
+                print("Start date: \(startDate)")
+                print("Finish date: \(Date())")
+                
+            case .failure(let error):
+                print("Could not fetch data - \(error)")
+            }
+        }
     }
 }
 
