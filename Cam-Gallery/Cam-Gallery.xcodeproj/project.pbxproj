@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,6 @@
 		9EC559C2249C516B00D97104 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */; };
 		9EC559C4249C557700D97104 /* UICollectionViewLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */; };
 		9EC559C6249C59E600D97104 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C5249C59E600D97104 /* PhotoViewController.swift */; };
-		71303A5F09D3459C8868F0EC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 057899E49B034515BFCDF1FC /* amplifyconfiguration.json */; };
-		14D612B96B224288A211E6DD /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +42,6 @@
 		9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Extensions.swift"; sourceTree = "<group>"; };
 		9EC559C5249C59E600D97104 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C4213216AB3A94912317AF1B /* Pods_Cam_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cam_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA7BC420AF84DC68E4C1808 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
-		057899E49B034515BFCDF1FC /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		95C64A9FE57C47D7A7013994 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/amplifyDatasource/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +76,6 @@
 		9EC55997249C46C300D97104 = {
 			isa = PBXGroup;
 			children = (
-				EF4D396913634B66AB7C5F9A /* AmplifyConfig */,
 				9EC559A2249C46C400D97104 /* Cam-Gallery */,
 				9EC559A1249C46C400D97104 /* Products */,
 				712467973D3DA3503EB0D06E /* Pods */,
@@ -125,26 +118,6 @@
 				9EC559AC249C46C600D97104 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		EF4D396913634B66AB7C5F9A /* AmplifyConfig */ = {
-			isa = PBXGroup;
-			children = (
-				2DA7BC420AF84DC68E4C1808 /* amplifytools.xcconfig */,
-				057899E49B034515BFCDF1FC /* amplifyconfiguration.json */,
-				1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */,
-				95C64A9FE57C47D7A7013994 /* schema.graphql */,
-			);
-			name = AmplifyConfig;
-			path = .;
-			sourceTree = "<group>";
-		};
-		D4BEC2CEC9D041C4AE0D003D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +183,6 @@
 				9EC559B0249C46C600D97104 /* LaunchScreen.storyboard in Resources */,
 				9EC559AD249C46C600D97104 /* Preview Assets.xcassets in Resources */,
 				9EC559AA249C46C600D97104 /* Assets.xcassets in Resources */,
-				71303A5F09D3459C8868F0EC /* amplifyconfiguration.json in Resources */,
-				14D612B96B224288A211E6DD /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
