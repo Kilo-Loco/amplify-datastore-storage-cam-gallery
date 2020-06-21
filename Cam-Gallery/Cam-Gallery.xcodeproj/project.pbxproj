@@ -227,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+			shellScript = "# \"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
