@@ -10,7 +10,7 @@ import UIKit
 
 class GalleryCell: UICollectionViewCell {
     
-    var downloadImageTask: URLSessionDataTask?
+    var downloadImageOp: Operation?
     
     lazy var imageView: UIImageView = {
         let view = UIImageView()
@@ -46,12 +46,12 @@ class GalleryCell: UICollectionViewCell {
     }
     
     func setImage(at imagePath: String) {
-        downloadImageTask = imageView.setImage(from: imagePath)
+        downloadImageOp = imageView.setImage(from: imagePath)
         contentView.backgroundColor = UIColor(red: .random(in: 0 ... 1), green: .random(in: 0 ... 1), blue: .random(in: 0 ... 1), alpha: 1)
     }
     
     func cancelImageRendering() {
-        downloadImageTask?.cancel()
+        downloadImageOp?.cancel()
     }
     
     override func prepareForReuse() {

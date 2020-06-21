@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7465A18582494B9C3BA559 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B6013E1E394C6AB5FE66AA /* awsconfiguration.json */; };
+		7D3052C3409F425994C50071 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B94A158650EA43C281355F8E /* amplifyconfiguration.json */; };
+		7EBF1F5EB634406DB972F928 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C32A4D536841B6BF8B70BC /* Photo.swift */; };
 		9121B84E69CD77440797AD67 /* Pods_Cam_Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4213216AB3A94912317AF1B /* Pods_Cam_Gallery.framework */; };
+		91A635672C80492CA3734872 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C1292A6C9648A984C7156C /* AmplifyModels.swift */; };
 		9EC559A4249C46C400D97104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559A3249C46C400D97104 /* AppDelegate.swift */; };
 		9EC559A6249C46C400D97104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559A5249C46C400D97104 /* SceneDelegate.swift */; };
 		9EC559AA249C46C600D97104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC559A9249C46C600D97104 /* Assets.xcassets */; };
@@ -17,20 +21,19 @@
 		9EC559BA249C473F00D97104 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559B9249C473F00D97104 /* GalleryView.swift */; };
 		9EC559BC249C4A9700D97104 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559BB249C4A9700D97104 /* GalleryCell.swift */; };
 		9EC559BE249C4EBF00D97104 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559BD249C4EBF00D97104 /* ImageCache.swift */; };
-		9EC559C0249C504000D97104 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559BF249C504000D97104 /* ImageDownloader.swift */; };
 		9EC559C2249C516B00D97104 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */; };
 		9EC559C4249C557700D97104 /* UICollectionViewLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */; };
 		9EC559C6249C59E600D97104 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C5249C59E600D97104 /* PhotoViewController.swift */; };
-		7D3052C3409F425994C50071 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B94A158650EA43C281355F8E /* amplifyconfiguration.json */; };
-		1F7465A18582494B9C3BA559 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 09B6013E1E394C6AB5FE66AA /* awsconfiguration.json */; };
-		91A635672C80492CA3734872 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C1292A6C9648A984C7156C /* AmplifyModels.swift */; };
-		7EBF1F5EB634406DB972F928 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C32A4D536841B6BF8B70BC /* Photo.swift */; };
 		D51B0C1ABCD044C8B4C2E7AD /* Photo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC331B84E1B44E2BBC34507D /* Photo+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B6013E1E394C6AB5FE66AA /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		1BFA4CE3B92A2911FB225CA3 /* Pods-Cam-Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam-Gallery.debug.xcconfig"; path = "Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		2B556A8083205EBADD292163 /* Pods-Cam-Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam-Gallery.release.xcconfig"; path = "Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery.release.xcconfig"; sourceTree = "<group>"; };
+		56C1292A6C9648A984C7156C /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		58C32A4D536841B6BF8B70BC /* Photo.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = amplify/generated/models/Photo.swift; sourceTree = "<group>"; };
+		93C57EE6BDD64C6C93812D45 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
 		9EC559A0249C46C400D97104 /* Cam-Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cam-Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC559A3249C46C400D97104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC559A5249C46C400D97104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,18 +45,13 @@
 		9EC559B9249C473F00D97104 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		9EC559BB249C4A9700D97104 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		9EC559BD249C4EBF00D97104 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
-		9EC559BF249C504000D97104 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Extensions.swift"; sourceTree = "<group>"; };
 		9EC559C5249C59E600D97104 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		B94A158650EA43C281355F8E /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		C4213216AB3A94912317AF1B /* Pods_Cam_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cam_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDE8C8768D964F5587610489 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
-		B94A158650EA43C281355F8E /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		09B6013E1E394C6AB5FE66AA /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		93C57EE6BDD64C6C93812D45 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/amplifyDatasource/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
-		56C1292A6C9648A984C7156C /* AmplifyModels.swift */ = {isa = PBXFileReference; name = "AmplifyModels.swift"; path = "amplify/generated/models/AmplifyModels.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		58C32A4D536841B6BF8B70BC /* Photo.swift */ = {isa = PBXFileReference; name = "Photo.swift"; path = "amplify/generated/models/Photo.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		DC331B84E1B44E2BBC34507D /* Photo+Schema.swift */ = {isa = PBXFileReference; name = "Photo+Schema.swift"; path = "amplify/generated/models/Photo+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		DC331B84E1B44E2BBC34507D /* Photo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Photo+Schema.swift"; path = "amplify/generated/models/Photo+Schema.swift"; sourceTree = "<group>"; };
+		DDE8C8768D964F5587610489 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54B968A3598140EF9D9C3CD3 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				56C1292A6C9648A984C7156C /* AmplifyModels.swift */,
+				58C32A4D536841B6BF8B70BC /* Photo.swift */,
+				DC331B84E1B44E2BBC34507D /* Photo+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
+			sourceTree = "<group>";
+		};
 		712467973D3DA3503EB0D06E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +126,6 @@
 				9EC559B9249C473F00D97104 /* GalleryView.swift */,
 				9EC559BB249C4A9700D97104 /* GalleryCell.swift */,
 				9EC559BD249C4EBF00D97104 /* ImageCache.swift */,
-				9EC559BF249C504000D97104 /* ImageDownloader.swift */,
 				9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */,
 				9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */,
 				9EC559C5249C59E600D97104 /* PhotoViewController.swift */,
@@ -143,25 +151,6 @@
 				93C57EE6BDD64C6C93812D45 /* schema.graphql */,
 			);
 			name = AmplifyConfig;
-			path = .;
-			sourceTree = "<group>";
-		};
-		12FCEC87162946CD9F83611F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			path = undefined;
-			sourceTree = "<group>";
-		};
-		54B968A3598140EF9D9C3CD3 /* AmplifyModels */ = {
-			isa = PBXGroup;
-			children = (
-				56C1292A6C9648A984C7156C /* AmplifyModels.swift */,
-				58C32A4D536841B6BF8B70BC /* Photo.swift */,
-				DC331B84E1B44E2BBC34507D /* Photo+Schema.swift */,
-			);
-			name = AmplifyModels;
 			path = .;
 			sourceTree = "<group>";
 		};
@@ -304,7 +293,6 @@
 				9EC559C4249C557700D97104 /* UICollectionViewLayout+Extensions.swift in Sources */,
 				9EC559BE249C4EBF00D97104 /* ImageCache.swift in Sources */,
 				9EC559B8249C470A00D97104 /* GalleryViewController.swift in Sources */,
-				9EC559C0249C504000D97104 /* ImageDownloader.swift in Sources */,
 				9EC559BC249C4A9700D97104 /* GalleryCell.swift in Sources */,
 				9EC559A4249C46C400D97104 /* AppDelegate.swift in Sources */,
 				9EC559A6249C46C400D97104 /* SceneDelegate.swift in Sources */,

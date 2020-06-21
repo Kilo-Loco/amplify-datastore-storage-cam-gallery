@@ -30,7 +30,7 @@ class GalleryViewController: UIViewController {
         configureSelf()
         configureCollectionView()
         configureCommunication()
-//        getFile()
+        getPhotos()
     }
     
     func configureSelf() {
@@ -49,40 +49,58 @@ class GalleryViewController: UIViewController {
         }
     }
     
+    func getPhotos() {
+        _ = Amplify.DataStore.query(Photo.self) { [weak self] result in
+            switch result {
+            case .success(let photos):
+                DispatchQueue.main.async {
+                    self?.photos = photos
+                }
+                
+            case .failure(let error):
+                print("Could not fetch photos - \(error)")
+            }
+        }
+    }
+    
     func upload(_ image: UIImage) {
-        guard let imageData = image.jpegData(compressionQuality: 0.1) else { return }
+        guard let imageData = image.jpegData(compressionQuality: 1) else { return }
         print(imageData)
         let key = UUID().uuidString
         
         _ = Amplify.Storage.uploadData(key: key, data: imageData,
             progressListener: { progress in
                 print("Progress: \(progress)")
-            }, resultListener: { (event) in
+            }, resultListener: { [weak self] (event) in
                 switch event {
-                case .success(let data):
-                    print("Completed: \(data)")
+                case .success(let fileKey):
+                    print("Completed: \(fileKey)")
+                    
+                    self?.savePhoto(with: fileKey)
+                    
                 case .failure(let storageError):
                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
             }
         })
     }
     
-    func getFile() {
-        let startDate = Date()
-        let key = "C6422CB1-0013-4289-A911-FB9C67D88D98"
-        _ = Amplify.Storage.downloadData(key: key) { result in
+    func savePhoto(with key: String) {
+        let photo = Photo(imageKey: key)
+        
+        _ = Amplify.DataStore.save(photo) { [weak self] result in
             switch result {
-            case .success(let data):
-                print("Retrieved data - \(data)")
-                
-                print("Start date: \(startDate)")
-                print("Finish date: \(Date())")
+            case .success:
+                DispatchQueue.main.async {
+                    self?.photos.append(photo)
+                    self?.ui.collectionView.reloadData()
+                }
                 
             case .failure(let error):
-                print("Could not fetch data - \(error)")
+                print("Could not save photo - \(error)")
             }
         }
     }
+    
 }
 
 extension GalleryViewController: UICollectionViewDataSource {

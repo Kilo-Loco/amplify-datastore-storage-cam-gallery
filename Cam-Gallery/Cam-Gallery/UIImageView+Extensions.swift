@@ -6,27 +6,27 @@
 //  Copyright © 2020 Kilo Loco. All rights reserved.
 //
 
+import Amplify
 import UIKit
 
 extension UIImageView {
     
     @discardableResult
-    func setImage(from imagePath: String?) -> URLSessionDataTask? {
-        guard let imagePath = imagePath else { return nil }
-        if let image = ImageCache.shared.getImage(for: imagePath) {
-            
+    func setImage(from key: String) -> Operation? {
+        
+        if let image = ImageCache.shared.getImage(for: key) {
             self.image = image
-            
             return nil
             
         } else {
-            let task = ImageDownloader.getImageData(from: imagePath) { data in
+            return Amplify.Storage.downloadData(key: key) { [weak self] result in
+                guard case .success(let data) = result else { return }
+                
                 let image = UIImage(data: data)
-                DispatchQueue.main.async { [weak self] in
+                DispatchQueue.main.async {
                     self?.image = image
                 }
             }
-            return task
         }
     }
 }
