@@ -132,6 +132,7 @@
 				9EC5599C249C46C300D97104 /* Sources */,
 				9EC5599D249C46C300D97104 /* Frameworks */,
 				9EC5599E249C46C300D97104 /* Resources */,
+				F6611D44C929200929E9A610 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +229,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# \"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+		};
+		F6611D44C929200929E9A610 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
