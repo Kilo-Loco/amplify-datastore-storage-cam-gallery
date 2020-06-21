@@ -21,8 +21,10 @@ extension UIImageView {
         } else {
             return Amplify.Storage.downloadData(key: key) { [weak self] result in
                 guard case .success(let data) = result else { return }
-                
                 let image = UIImage(data: data)
+                
+                image.flatMap { ImageCache.shared.cache($0, for: key) }
+                
                 DispatchQueue.main.async {
                     self?.image = image
                 }

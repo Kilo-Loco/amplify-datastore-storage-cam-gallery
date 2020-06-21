@@ -264,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
+			shellScript = "# \"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
 		};
 		F6611D44C929200929E9A610 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

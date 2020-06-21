@@ -7,6 +7,7 @@
 //
 
 import Amplify
+import Combine
 import UIKit
 
 class GalleryViewController: UIViewController {
@@ -21,6 +22,8 @@ class GalleryViewController: UIViewController {
     var photos = [Photo]()
     let ui = GalleryView()
     
+    var photosObservationToken: AnyCancellable?
+    
     override func loadView() {
         view = ui
     }
@@ -31,6 +34,7 @@ class GalleryViewController: UIViewController {
         configureCollectionView()
         configureCommunication()
         getPhotos()
+        observePhotos()
     }
     
     func configureSelf() {
@@ -53,8 +57,10 @@ class GalleryViewController: UIViewController {
         _ = Amplify.DataStore.query(Photo.self) { [weak self] result in
             switch result {
             case .success(let photos):
+                print("Retrieved \(photos.count) photos")
                 DispatchQueue.main.async {
                     self?.photos = photos
+                    self?.ui.collectionView.reloadData()
                 }
                 
             case .failure(let error):
@@ -90,6 +96,7 @@ class GalleryViewController: UIViewController {
         _ = Amplify.DataStore.save(photo) { [weak self] result in
             switch result {
             case .success:
+                print("Saved photo")
                 DispatchQueue.main.async {
                     self?.photos.append(photo)
                     self?.ui.collectionView.reloadData()
@@ -99,6 +106,34 @@ class GalleryViewController: UIViewController {
                 print("Could not save photo - \(error)")
             }
         }
+    }
+    
+    func observePhotos() {
+        photosObservationToken = Amplify.DataStore.publisher(for: Photo.self).sink(
+            receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    print("Completion finished")
+                    
+                case .failure(let error):
+                    print("Completion failure - \(error)")
+                }
+        }, receiveValue: { changes in
+            print("Observed changes", changes.mutationType)
+            switch changes.mutationType {
+            case "create":
+                break
+                
+            case "update":
+                break
+                
+            case "delete":
+                break
+                
+            default:
+                break
+            }
+        })
     }
     
 }
