@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DC1908D0A014A1BB454B06D /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077947B507044DFABF25783 /* AmplifyModels.swift */; };
-		1C97971A95964D19951FA4B8 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5907462DE84B8E9E9E1F98 /* Photo.swift */; };
-		77936F706AA748A288796ECF /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FC059B85507A4AF5A3C7D4F6 /* amplifyconfiguration.json */; };
 		9121B84E69CD77440797AD67 /* Pods_Cam_Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4213216AB3A94912317AF1B /* Pods_Cam_Gallery.framework */; };
 		9EC559A4249C46C400D97104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559A3249C46C400D97104 /* AppDelegate.swift */; };
 		9EC559A6249C46C400D97104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559A5249C46C400D97104 /* SceneDelegate.swift */; };
@@ -24,14 +21,11 @@
 		9EC559C2249C516B00D97104 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */; };
 		9EC559C4249C557700D97104 /* UICollectionViewLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */; };
 		9EC559C6249C59E600D97104 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC559C5249C59E600D97104 /* PhotoViewController.swift */; };
-		B7091A31BC704894A525075C /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CB867B22017346688B0E486F /* awsconfiguration.json */; };
-		F295835E37B145C9B0D7F083 /* Photo+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE122F2E0743A79AE9E662 /* Photo+Schema.swift */; };
+		71303A5F09D3459C8868F0EC /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 057899E49B034515BFCDF1FC /* amplifyconfiguration.json */; };
+		14D612B96B224288A211E6DD /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1077947B507044DFABF25783 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
-		12C83752F6E94511952301FC /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
-		1B5907462DE84B8E9E9E1F98 /* Photo.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = amplify/generated/models/Photo.swift; sourceTree = "<group>"; };
 		1BFA4CE3B92A2911FB225CA3 /* Pods-Cam-Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam-Gallery.debug.xcconfig"; path = "Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		2B556A8083205EBADD292163 /* Pods-Cam-Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cam-Gallery.release.xcconfig"; path = "Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery.release.xcconfig"; sourceTree = "<group>"; };
 		9EC559A0249C46C400D97104 /* Cam-Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cam-Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,11 +43,11 @@
 		9EC559C1249C516B00D97104 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		9EC559C3249C557700D97104 /* UICollectionViewLayout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Extensions.swift"; sourceTree = "<group>"; };
 		9EC559C5249C59E600D97104 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		A86B7022789E482B9CA5FFCC /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/camgallery/schema.graphql; sourceTree = "<group>"; };
 		C4213216AB3A94912317AF1B /* Pods_Cam_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cam_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB867B22017346688B0E486F /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
-		DCEE122F2E0743A79AE9E662 /* Photo+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Photo+Schema.swift"; path = "amplify/generated/models/Photo+Schema.swift"; sourceTree = "<group>"; };
-		FC059B85507A4AF5A3C7D4F6 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		2DA7BC420AF84DC68E4C1808 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
+		057899E49B034515BFCDF1FC /* amplifyconfiguration.json */ = {isa = PBXFileReference; name = "amplifyconfiguration.json"; path = "amplifyconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */ = {isa = PBXFileReference; name = "awsconfiguration.json"; path = "awsconfiguration.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95C64A9FE57C47D7A7013994 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/amplifyDatasource/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B9E1D71ED464EF4B7BEA83F /* AmplifyConfig */ = {
-			isa = PBXGroup;
-			children = (
-				12C83752F6E94511952301FC /* amplifytools.xcconfig */,
-				FC059B85507A4AF5A3C7D4F6 /* amplifyconfiguration.json */,
-				CB867B22017346688B0E486F /* awsconfiguration.json */,
-				A86B7022789E482B9CA5FFCC /* schema.graphql */,
-			);
-			name = AmplifyConfig;
-			path = .;
-			sourceTree = "<group>";
-		};
 		712467973D3DA3503EB0D06E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +82,7 @@
 		9EC55997249C46C300D97104 = {
 			isa = PBXGroup;
 			children = (
-				E1145B453EC94CF98060BD64 /* AmplifyModels */,
-				0B9E1D71ED464EF4B7BEA83F /* AmplifyConfig */,
+				EF4D396913634B66AB7C5F9A /* AmplifyConfig */,
 				9EC559A2249C46C400D97104 /* Cam-Gallery */,
 				9EC559A1249C46C400D97104 /* Products */,
 				712467973D3DA3503EB0D06E /* Pods */,
@@ -146,15 +127,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E1145B453EC94CF98060BD64 /* AmplifyModels */ = {
+		EF4D396913634B66AB7C5F9A /* AmplifyConfig */ = {
 			isa = PBXGroup;
 			children = (
-				1077947B507044DFABF25783 /* AmplifyModels.swift */,
-				1B5907462DE84B8E9E9E1F98 /* Photo.swift */,
-				DCEE122F2E0743A79AE9E662 /* Photo+Schema.swift */,
+				2DA7BC420AF84DC68E4C1808 /* amplifytools.xcconfig */,
+				057899E49B034515BFCDF1FC /* amplifyconfiguration.json */,
+				1DBE0492C2684EF5B44E7B3C /* awsconfiguration.json */,
+				95C64A9FE57C47D7A7013994 /* schema.graphql */,
 			);
-			name = AmplifyModels;
+			name = AmplifyConfig;
 			path = .;
+			sourceTree = "<group>";
+		};
+		D4BEC2CEC9D041C4AE0D003D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +159,6 @@
 				9EC5599C249C46C300D97104 /* Sources */,
 				9EC5599D249C46C300D97104 /* Frameworks */,
 				9EC5599E249C46C300D97104 /* Resources */,
-				E5BF321043DB85A1326CF26E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,8 +210,8 @@
 				9EC559B0249C46C600D97104 /* LaunchScreen.storyboard in Resources */,
 				9EC559AD249C46C600D97104 /* Preview Assets.xcassets in Resources */,
 				9EC559AA249C46C600D97104 /* Assets.xcassets in Resources */,
-				77936F706AA748A288796ECF /* amplifyconfiguration.json in Resources */,
-				B7091A31BC704894A525075C /* awsconfiguration.json in Resources */,
+				71303A5F09D3459C8868F0EC /* amplifyconfiguration.json in Resources */,
+				14D612B96B224288A211E6DD /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,23 +258,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/AmplifyTools/amplify-tools.sh\"\n";
 		};
-		E5BF321043DB85A1326CF26E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cam-Gallery/Pods-Cam-Gallery-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -303,9 +275,6 @@
 				9EC559C2249C516B00D97104 /* UIImageView+Extensions.swift in Sources */,
 				9EC559BA249C473F00D97104 /* GalleryView.swift in Sources */,
 				9EC559C6249C59E600D97104 /* PhotoViewController.swift in Sources */,
-				0DC1908D0A014A1BB454B06D /* AmplifyModels.swift in Sources */,
-				1C97971A95964D19951FA4B8 /* Photo.swift in Sources */,
-				F295835E37B145C9B0D7F083 /* Photo+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

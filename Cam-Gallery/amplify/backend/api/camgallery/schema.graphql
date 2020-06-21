@@ -1,4 +1,0 @@
-type Photo @model {
-  id: ID!
-  imageKey: String!
-}
